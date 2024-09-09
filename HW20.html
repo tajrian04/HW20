@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./Assets/Styles/style.css">
+
+    <!-- ::: BOOTSTRAP START ::: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ::: BOOTSTRAP END ::: -->
+
+     <!-- ::: FONT AWESOME START ::: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ::: FONT AWESOME END ::: -->
+
+    <!-- ::: GOOGLE FONTS START ::: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- ::: GOOGLE FONTS END ::: -->
+</head>
+<body>
+    
+    <!-- :::: NAV START :::: -->
+
+    <nav id="navbar" class="shadow">
+        <div class="container">
+            <div class="row d-flex flex-row">
+                <div class="col-lg-4 d-flex flex-row">
+                    <span class="book pt-2 pe-4"><i class="fa-solid fa-book-open-reader"></i></span>
+                    <h2 class="pt-2">BookWorld</h2>
+                </div>
+                <div class="col-lg-3 pt-2">
+                    <div class="search">
+                        <input type="text" id="inputPassword5" class="form-control on_pass" placeholder="Enter Password" aria-describedby="passwordHelpBlock">
+                        <button class="glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 pt-3">
+                    <button class="log_in">Log In</button>
+                    <button class="sign_up">Sign Up</button>
+                </div>
+                <div class="col-lg-1 pt-3">
+                    <span class="user"><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="col-lg-1 pt-3">
+                    <div class="shift">
+                        <button class="daynight">
+                            <span class="moon"><i class="fa-solid fa-moon"></i></span>
+                            <span class="sun"><i class="fa-solid fa-sun"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- :::: NAV END :::: -->
+
+
+    <!-- :::: PROGRESS BAR START :::: -->
+
+    <!-- <section id="scroll_bar">
+        <div class="container">
+            <div class="bar"></div>
+        </div>
+    </section> -->
+
+    <!-- :::: PROGRESS BAR END :::: -->
+
+
+    <!-- :::: SCROLL START :::: -->
+
+    <div class="scroll">
+        <!-- <div class="up_arrow">
+
+        </div> -->
+        <span class="arrow"><i class="fa-solid fa-angle-up"></i></span>
+    </div>
+
+    <!-- :::: SCROLL END :::: -->
+
+
+    <!-- :::: SIDE MENU START :::: -->
+
+    <aside id="menu">
+        <ul class="menu">
+            <li>
+                <span class="beside"><i class="fa-solid fa-house"></i></span>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-list"></i></span>
+                <a href="#">Categories</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-pen"></i></span>
+                <a href="#">Authors</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-book"></i></span>
+                <a href="#">Publishers</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-book-bookmark"></i></span>
+                <a href="#">Popular Books</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-book-open"></i></span>
+                <a href="#">Book Reviews</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-message"></i></span>
+                <a href="#">Find My Books</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-cart-plus"></i></span>
+                <a href="#">Cart</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-clock-rotate-left"></i></span>
+                <a href="#">Order History</a>
+            </li>
+            <li>
+                <span class="beside"><i class="fa-solid fa-circle-info"></i></span>
+                <a href="#">Help & Support</a>
+            </li>
+        </ul>
+
+        <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+    </aside>
+
+    <!-- :::: SIDE MENU END :::: -->
+
+
+    <!-- :::: LOG IN START :::: -->
+
+    <section id="log">
+        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input">
+            <h3 class="heading">Log In</h3>
+            <div class="username">
+                <label for="exampleFormControlInput1" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Username">
+            </div>
+            <div class="pass">
+                <div class="password">
+                    <label for="inputPassword5" class="form-label">Password</label>
+                    <input type="text" id="inputPassword5" class="form-control in_pass" placeholder="Enter Password" aria-describedby="passwordHelpBlock">
+                </div>
+                <button class="eye">
+                    <span class="show"><i class="fa-solid fa-eye"></i></span>
+                    <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+                </button>
+            </div>
+            <p class="forgot">Forgot your password?</p>
+            <button class="login">Log In</button>
+            <h5 class="have">Dont't have an account? <a href="#" class="now">Sign up now.</a></h5>
+        </div>
+    </section>
+
+    <!-- :::: LOG IN END :::: -->
+
+
+    <!-- :::: SIGN UP START :::: -->
+
+    <section id="sign">
+        <span class="cut"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input">
+            <h3 class="heading">Sign Up</h3>
+            <div class="email">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+            </div>
+            <div class="username">
+                <label for="exampleFormControlInput1" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Username">
+            </div>
+            <div class="pass">
+                <div class="password">
+                    <label for="inputPassword5" class="form-label">Password</label>
+                    <input type="text" id="inputPassword5" class="form-control on_password" placeholder="Enter Password" aria-describedby="passwordHelpBlock">
+                </div>
+                <button class="eye">
+                    <span class="on"><i class="fa-solid fa-eye"></i></span>
+                    <span class="off"><i class="fa-solid fa-eye-slash"></i></span>
+                </button>
+            </div>
+            <p class="forgot">Forgot your password?</p>
+            <button class="signup">Sign Up</button>
+            <p class="terms">By signing up, you agree to the Internet Archive's <a href="#" class="service">Terms of Service.</a></p>
+            <h5 class="have">Already have an account? <a href="#" class="in">Log in</a></h5>
+        </div>
+    </section>
+
+    <!-- :::: SIGN UP END :::: -->
+
+
+    <!-- :::: USER ACCOUNT START :::: -->
+
+    <section id="user">
+        <span class="vanish"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input">
+            <h3 class="heading">User Account</h3>
+            <ul class="info">
+                <li class="details"><a href="#">Profile</a></li>
+                <li class="details"><a href="#">Privacy</a></li>
+                <li class="details"><a href="#">Settings</a></li>
+            </ul>
+            
+            
+            <button class="log_out">Log Out</button>
+        </div>
+    </section>
+
+    <!-- :::: USER ACCOUNT END :::: -->
+
+
+    <!-- :::: BOOK SUMMARY START :::: -->
+
+    <section id="summary">
+        <div class="container">
+            <h2>Book Summary</h2>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/1.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>Dark Matter</h3>
+                    <h4>
+                        Dark Matter is a thriller science fiction novel by American writer Blake Crouch, 
+                        first published in the United States in July 2016 by the Crown Publishing Group. 
+                        The story is about a physicist who is kidnapped and sent to a parallel universe 
+                        in which another version of his life unfolds because of a different choice he made 
+                        fifteen years previously. The book draws on the many-worlds interpretation of quantum 
+                        mechanics which posits that every possible outcome of every event creates a new universe 
+                        or world that runs parallel to our own.
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/2.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>The Crucifix Killer</h3>
+                    <h4>
+                        When the body of a young woman is discovered in a derelict cottage in Los Angeles, 
+                        Robert Hunter is thrown into a nightmare case. The victim suffered a terrible death, 
+                        and on the nape of her neck has been carved a strange double-cross: the signature of 
+                        a psychopath known as the Crucifix Killer.
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/3.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>The Executioner </h3>
+                    <h4>
+                        The Executioner was created and initially written by American author Don Pendleton,
+                        who penned 37 of the original 38 Bolan novels (he did not write #16). In 1980, 
+                        Pendleton licensed the rights to Gold Eagle and was succeeded by a collective of 
+                        ghostwriters. Some Pinnacle printings in the middle of Pendleton's original series 
+                        carried a photo and brief article on the author, showing that Pendleton was not just
+                        a "house name".
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/4.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>I Am Pilgrim</h3>
+                    <h4>
+                        "Pilgrim" is an American former intelligence agent known as the "Rider of the Blue" 
+                        who later writes a book on forensic pathology. Pilgrim becomes involved in a case in
+                         New York City where a mysterious woman uses his book to commit untraceable murders 
+                         in the aftermath of 9/11. The "Saracen" is a Saudi who becomes radicalised by 
+                         watching his father's beheading. He later trains as a doctor and fights in the 
+                         Soviet–Afghan War. Pilgrim is recalled to the intelligence community who have 
+                         detected a threat involving the Saracen, who has created a vaccine-resistant strain
+                          of the variola major virus.
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/5.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>3:00 AM</h3>
+                    <h4>
+                        It tells the story of one man who lives more in the one hour he has each day than 
+                        many of us do in an entire day. Henry Bins has Henry Bins Disease. It is named after
+                         him because it is so incredibly rare. He is only awake one hour per day--from 3 am 
+                         to 4am.
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/6.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>Ikigai </h3>
+                    <h4>
+                        'Ikigai' by Hector Garcia and Francesc Miralles explores the Japanese concept of 
+                        finding one's purpose in life by analyzing the habits and beliefs of the world's 
+                        longest-living people. Through case studies, the book offers practical insights 
+                        on how to live a more fulfilling life.
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/7.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>The Chestnut Man</h3>
+                    <h4>
+                        The Chestnut Man (Danish: Kastanjemanden) is a Danish crime series released on 
+                        Netflix on 29 September 2021. The Chestnut Man opens with the discovery of the 
+                        murder of an entire family on an isolated farm in 1987. More than thirty years 
+                        later, in present-day Copenhagen, a young woman is found murdered in a playground 
+                        with one of her hands missing. Detective Naia Thulin is assigned to the case. With 
+                        her reluctant new partner, Mark Hess, they notice a tiny figurine made of chestnuts 
+                        lying next to the body. A mysterious piece of evidence is soon discovered on the 
+                        chestnut man—the fingerprint of a missing girl, the daughter of politician Rosa 
+                        Hartung.
+                    </h4>
+                </div>
+            </div>
+            <div class="row one">
+                <div class="col-lg-4 image">
+                    <img class="img-fluid" src="./Assets/Images/8.jpg" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h3>The Moai Island Puzzle</h3>
+                    <h4>
+                        The Moai Island Puzzle (孤島パズル, Kotō Pazuru, "Solitary Island Puzzle") is a 
+                        1989 Japanese mystery novel by Alice Arisugawa that falls into the honkaku (本格) 
+                        subgenre of Japanese detective fiction.[1] The novel is the second in a series 
+                        featuring Jirō Egami as detective and the first Arisugawa book to be translated 
+                        into English. It details a series of murders that occur among a group of vacationers 
+                        on an island off Japan's coast.[2] Like other novels in the same series, a character 
+                        named Alice Arisugawa takes part in the events and narrates them to readers by 
+                        breaking the fourth wall.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- :::: BOOK SUMMARY END :::: -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="./Assets/JS/function.js"></script>
+</body>
+</html>
